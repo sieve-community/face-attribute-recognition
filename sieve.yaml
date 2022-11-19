@@ -1,0 +1,13 @@
+model_version: "0.0.486"
+build:
+  gpu: true
+  system_packages:
+    - "libgl1-mesa-glx"
+    - "libglib2.0-0"
+  python_version: "3.8"
+  python_packages:
+    - "deepface==0.0.75"
+predict: "predictor.py:FaceAttributePredictor"
+model_name: "face-attribute-predictor"
+private: false
+iteration: "objects"
